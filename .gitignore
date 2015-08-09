@@ -27,3 +27,16 @@
 *.i*86
 *.x86_64
 *.hex
+
+# Vim
+.*.s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+# Mac Files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
