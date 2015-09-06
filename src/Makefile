@@ -1,6 +1,6 @@
 IDIR = ../includes
 CC = gcc
-CFLAGS = $(shell mysql_config --libs && grep '^CFLAGS = ' ../lib/bcrypt/crypt_blowfish/Makefile | cut -d= -f2-) -std=c11 -I.
+CFLAGS = $(shell mysql_config --libs) -I.
 
 ODIR=../obj
 LDIR=../lib

@@ -6,5 +6,9 @@ struct spergs_user {
     char *username;
 };
 
-int spergs_authenticate(struct spergs_user *authuser, char *password);
+struct spergs_user *user_init(MYSQL *mysql);
+
+int user_authenticate(struct spergs_user *authuser, char *username, char *password);
+
+int user_free(struct spergs_user *authuser);
 #endif
